@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Stick+No+Bills:wght@600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap');
+
+#menu {
+  background-image: url(img/fondo.png);
+  background-size: cover;      
+  background-position: center;
+  background-repeat: repeat;
+  padding: 5rem;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+
+.menu-title {
+  font-size: 96px;
+  color: #00bcd4;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-family: 'Stick No Bills', sans-serif;
+}
+
+.bienvenida {
+  font-family: "Playfair Display";
+  font-size: 24px;  
+  margin-bottom: 2rem;
+  color: black;
+}
+
+.categoria h3 {
+  font-family: 'Stick No Bills', sans-serif;
+  font-size: 40px;
+  margin: 1.5rem 0;
+  color: rgb(68, 40, 8);
+}
+
+.carousel-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  max-width: 1050px;
+  margin: 0 auto;
+  font-family: "Playfair Display";
+  z-index: 1;  
+}
+
+.carousel-track {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 1rem;
+  scroll-behavior: smooth;
+  overflow-x: auto;
+  padding: 10px 0;
+}
+
+.carousel-track::-webkit-scrollbar {
+  display: none;
+}
+
+.card {
+  flex: 0 0 250px;
+  min-width: 250px;
+  background: rgba(249, 192, 106, 0.253);
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding-bottom: 10px;
+  text-align: center;
+  z-index: 2;
+}
+
+.card img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 8px;
+  aspect-ratio: 4 / 3;
+}
+
+.card h4 {
+  margin: 0.5rem 0 0.25rem;
+  font-family: "Playfair Display";
+  color: rgb(68, 40, 8);
+  font-size: 22px;
+}
+
+.card p {
+  margin-bottom: 0.25rem;
+  padding: 5px;
+  font-family: "Playfair Display";
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+}
+
+.card span {
+  font-weight: bold;
+  font-family: "Playfair Display";
+  color: rgb(68, 40, 8);
+  font-size: 16px; 
+  display: block;
+  margin-top: 0.7rem;
+}
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.prev { left: 0; }
+.next { right: 0; }
+
+.menu-completo {
+  background-image: url(img/fondo-qr.jpg);
+  background-size: cover;      
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 3rem 1rem;
+  color: white;
+  text-align: left;
+  position: relative;
+}
+
+.menu-completo .contenido {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.menu-completo .texto {
+  flex: 1 1 60%;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.6rem;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.menu-completo .texto strong {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.menu-completo .texto .cta {
+  margin-top: 1.5rem;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.menu-completo .qr {
+  flex: 1 1 30%;
+  text-align: center;
+}
+
+.menu-completo .qr img {
+  width: 300px;
+  height: auto;
+  border-radius: 8px;
+}

@@ -1,0 +1,65 @@
+.promociones {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background-color: white;
+  padding: 20px 0px 0px 0px
+}
+
+.carousel-slide {
+  display: none;
+  position: relative;
+  text-align: center;
+}
+
+.carousel-slide.active {
+  display: block;
+}
+
+.carousel-slide img {
+  width: 100%;
+  height: auto;
+}
+
+.carousel-btn {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+  background-color: rgb(255, 255, 255);     
+  border: none;
+  color: white;               
+  cursor: pointer;
+  padding: 2px;
+  border-radius: 60%;          
+}
+
+.carousel-btn:hover {
+  background-color: #333;
+}
+
+.carousel-btn.prev {
+  left: 10px;
+}
+
+.carousel-btn.next {
+  right: 10px;
+}
+
+.dots {
+  text-align: center;
+  margin-top: 0;
+}
+
+.dot {
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  margin: 5px;
+  background-color: #1e90ff;
+  border-radius: 50%;
+}
+
+.dot.active {
+  background-color: #81baf3;
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gestión de Usuarios - Palmetto</title>
+  <link rel="stylesheet" href="usuarios.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Stick+No+Bills:wght@800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair:ital,wght@0,300;1,300&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div class="dashboard-container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <img src="img/Logo.png" alt="Logo" class="logo-sidebar" />
+        <h2 class="sidebar-title">PALMETTO<br />COCINA & CAFÉ</h2>
+      </div>
+      <nav class="sidebar-menu">
+        <a href="../Dashboard/dashboard.html" class="btn-nav">🏠 Inicio</a>
+        <a href="../Platos/platos.html" class="btn-nav">🍽️ Platos Menú</a>
+        <a href="../Promociones/promociones.html" class="btn-nav">🎉 Promociones</a>
+        <a href="../Usuarios/usuarios.html" class="btn-nav">👥 Usuarios</a>
+        <a href="../login/login.html" class="btn-nav logout">❌ Cerrar sesión</a>
+      </nav>
+    </aside>
+
+    <!-- Sección Principal -->
+    <main class="usuarios-dashboard">
+      <!-- Panel de Usuarios Existentes -->
+      <section id="usuarios-lista" class="usuarios-lista">
+        <h2>Usuarios</h2>
+        <div id="usuarios-lista-contenido">
+          <div class="usuario-card">
+            <div class="usuario-info">
+              <strong>Pamela Gonzales</strong><br />
+              pamela.gonzales@palmetto.com<br />
+              ************<br />
+              Administradora
+            </div>
+            <div class="usuario-acciones">
+              <button class="btn-editar"
+                data-nombre="Pamela Gonzales"
+                data-email="pamela.gonzales@palmetto.com"
+                data-clave="12345678"
+                data-rol="Administrador">
+                Editar
+              </button>
+              <button class="btn-borrar">🗑️ Borrar</button>
+            </div>
+          </div>
+
+          <div class="usuario-card">
+            <div class="usuario-info">
+              <strong>Brayan Rodríguez</strong><br />
+              brayan.rodriguez@palmetto.com<br />
+              ************<br />
+              Coadministrador
+            </div>
+            <div class="usuario-acciones">
+              <button class="btn-editar"
+                data-nombre="Brayan Rodríguez"
+                data-email="brayan.rodriguez@palmetto.com"
+                data-clave="87654321"
+                data-rol="Coadministrador">
+                Editar
+              </button>
+              <button class="btn-borrar">🗑️ Borrar</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Formulario para Crear/Editar Usuario -->
+      <section id="usuarios-form" class="usuarios-form">
+        <h2>Actualizar o Crear Usuario</h2>
+        <form id="form-crear-usuario">
+          <input type="text" name="nombre" placeholder="Nombre" required />
+          <input type="email" name="correo" placeholder="Correo Electrónico" required />
+          <input type="password" name="contraseña" placeholder="Contraseña" required />
+          <select name="perfil" required>
+            <option value="">Seleccionar perfil</option>
+            <option value="Administrador">Administrador</option>
+            <option value="Coadministrador">Coadministrador</option>
+          </select>
+          <button type="submit" class="guardar">Guardar</button>
+        </form>
+      </section>
+    </main>
+  </div>
+
+  <script src="usuarios.js"></script>
+</body>
+</html>

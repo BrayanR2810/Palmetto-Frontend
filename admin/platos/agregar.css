@@ -1,0 +1,184 @@
+/* ===== RESET GENERAL ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 109%;
+  margin: 0;
+  font-family: 'Stick No Bills', sans-serif;
+}
+
+.dashboard-container {
+  display: flex;
+  height: 100%;
+}
+
+/* === SIDEBAR === */
+.sidebar {
+  background-color: #b2875d;
+  color: white;
+  width: 350px;
+  height: auto;
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.sidebar-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.logo-sidebar {
+  width: 101px;
+  height: 94px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.sidebar-title {
+  font-size: 32px;
+  line-height: 1.1;
+  color: #ffffff;
+  text-align: center;
+}
+
+.sidebar-menu {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  font-family: "Playfair Display";
+}
+
+.btn-nav {
+  padding: 10px 15px;
+  margin: 5px 0;
+  text-decoration: none;
+  background-color: rgba(217,217,217, 0.48);
+  color: white;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+  font-family: "Playfair Display";
+}
+
+.btn-nav:hover {
+  background-color: #9e9c9c;
+}
+
+.logout {
+  background-color: rgba(244, 9, 9, 0.35);
+}
+
+.logout:hover {
+  background-color: rgba(255, 0, 0, 0.726);
+}
+
+/* === MAIN DASHBOARD === */
+
+.main-dashboard {
+  flex: 1;
+  background-color: #fbe9dc;
+  display: flex;
+  justify-content: center; 
+  align-items: flex-start;
+  padding: 40px;
+  height: 100%;
+}
+
+.contenido-dashboard {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; 
+  width: 100%;
+  max-width: 500px;
+}
+
+.titulo-pagina {
+  font-size: 32px;
+  font-weight: bold;
+  margin: 0 0 10px -200px;
+  color: #5e3c1f;
+  font-family: 'Stick No Bills', sans-serif;
+  align-self: flex-start;
+}
+
+h3 {
+  font-size: 30px;
+  margin-bottom: 5px;
+}
+
+.welcome {
+  margin: 10px 0 30px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.form-container {
+  width: 100%;
+  max-width: 500px;
+  padding: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  color: #5e3c1f;
+  margin-bottom: 30px;
+}
+
+.formulario label {
+  display: block;
+  margin-bottom: 5px;
+  color: #070707;
+  font-weight: bold;
+  font-family: "Playfair Display";
+  font-size: 20px;
+}
+
+.formulario input,
+.formulario textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 2px rgb(217, 217, 217, 94%);
+  background-color: rgb(217, 217, 217, 94%);
+  border-radius: 8px;
+}
+
+.botones {
+  display: flex;
+  justify-content: space-between;
+}
+
+.guardar {
+  background-color: #2176ae;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: "Playfair Display";
+}
+
+.cancelar {
+  background-color: #e03c3c;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 10px;
+  text-decoration: none;
+  display: inline-block;
+  font-family: "Playfair Display";
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gestión de Platos - Palmetto</title>
+  <link rel="stylesheet" href="platos.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Stick+No+Bills:wght@800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="dashboard-container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <img src="img/Logo.png" alt="Logo" class="logo-sidebar">
+        <h2 class="sidebar-title">PALMETTO<br>COCINA & CAFÉ</h2>
+      </div>
+      <nav class="sidebar-menu">
+        <a href="../Dashboard/dashboard.html" class="btn-nav">🏠 Inicio</a>
+        <a href="../Platos/platos.html" class="btn-nav">🍽️ Platos Menú</a>
+        <a href="../Promociones/promociones.html" class="btn-nav">🎉 Promociones</a>
+        <a href="../Usuarios/usuarios.html" class="btn-nav">👥 Usuarios</a>
+        <a href="../login/login.html" class="btn-nav logout">❌ Cerrar sesión</a>
+      </nav>
+    </aside>
+
+    <!-- Contenido principal -->
+    <main class="main-dashboard">
+      <h3>PLATOS MENÚ</h3>
+      <p class="welcome">Gestión de platos</p>
+
+      <!-- Categoría: DESAYUNOS -->
+      <div class="categoria">
+        <h3>DESAYUNOS</h3>
+        <div class="carousel-container">
+          <button class="prev">&#10094;</button>
+          <div class="carousel-track" data-categoria="desayunos">
+            <!-- aquí se insertan automáticamente los platos -->
+          </div>
+          <button class="next">&#10095;</button>
+        </div>
+        <button class="agregar" data-tipo="plato">Agregar Plato</button>
+      </div>
+
+      <!-- Categoría: PLATOS FUERTES -->
+      <div class="categoria">
+        <h3>PLATOS FUERTES</h3>
+        <div class="carousel-container">
+          <button class="prev">&#10094;</button>
+          <div class="carousel-track" data-categoria="platos fuertes">
+            <!-- aquí se insertan automáticamente los platos -->
+          </div>
+          <button class="next">&#10095;</button>
+        </div>
+        <button class="agregar" data-tipo="plato">Agregar Plato</button>
+      </div>
+
+      <!-- Categoría: BEBIDAS -->
+      <div class="categoria">
+        <h3>BEBIDAS</h3>
+        <div class="carousel-container">
+          <button class="prev">&#10094;</button>
+          <div class="carousel-track" data-categoria="bebidas">
+            <!-- aquí se insertan automáticamente las bebidas -->
+          </div>
+          <button class="next">&#10095;</button>
+        </div>
+        <button class="agregar" data-tipo="bebida">Agregar Bebida</button>
+      </div>
+    </main>
+  </div>
+
+  <script src="platos.js"></script>
+</body>
+</html>

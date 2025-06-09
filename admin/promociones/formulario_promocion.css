@@ -1,0 +1,161 @@
+/* ===== RESET GENERAL ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  margin: auto;
+  font-family: 'Stick No Bills', sans-serif;
+}
+
+.dashboard-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* === SIDEBAR === */
+.sidebar {
+  background-color: #b2875d;
+  color: white;
+  width: 350px;
+  height: auto;
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.sidebar-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.logo-sidebar {
+  width: 101px;
+  height: 94px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.sidebar-title {
+  font-size: 32px;
+  line-height: 1.1;
+  color: #ffffff;
+  text-align: center;
+}
+
+.sidebar-menu {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  font-family: "Playfair Display";
+}
+
+.btn-nav {
+  padding: 10px 15px;
+  margin: 5px 0;
+  text-decoration: none;
+  background-color: rgba(217,217,217, 0.48);
+  color: white;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+  font-family: "Playfair Display";
+}
+
+.btn-nav:hover {
+  background-color: #9e9c9c;
+}
+
+.logout {
+  background-color: rgba(244, 9, 9, 0.35);
+}
+
+.logout:hover {
+  background-color: rgba(255, 0, 0, 0.726);
+}
+
+/* === MAIN DASHBOARD === */
+
+.main-dashboard {
+  padding: 30px;
+  color: rgb(68, 40, 8);
+  width: 1100px;
+  background-color: #fbe9dc;
+}
+
+.welcome {
+  margin: 10px 0 30px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.promo-form-container {
+  display: flex;
+  gap: 60px;
+  margin-top: 5%;
+  justify-content: center;
+  width: 100%;
+  max-width: 1000px;
+}
+
+.form-box {
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  text-align: center;
+}
+
+.form-box h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #5e3c1f;
+  font-family: 'Stick No Bills', sans-serif;
+}
+
+.img-upload-label {
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto 30px;
+  background-color: #d9d9d9;
+  border-radius: 10px;
+  padding:40px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+  font-family: 'Playfair', serif;
+}
+
+.img-upload-label:hover {
+  background-color: #c8c8c8;
+}
+
+.guardar {
+  background-color: #2176ae;
+  color: white;
+  border: none;
+  margin-top: 20px;
+  padding: 10px 25px;
+  font-size: 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.guardar:hover {
+  background-color: #1a5f8d;
+}
+

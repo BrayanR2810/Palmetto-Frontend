@@ -1,0 +1,186 @@
+/* ===== RESET GENERAL ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  margin: auto;
+  font-family: 'Stick No Bills', sans-serif;
+}
+
+.dashboard-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* === SIDEBAR === */
+.sidebar {
+  background-color: #b2875d;
+  color: white;
+  width: 350px;
+  height: auto;
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.sidebar-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.logo-sidebar {
+  width: 101px;
+  height: 94px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.sidebar-title {
+  font-size: 32px;
+  line-height: 1.1;
+  color: #ffffff;
+  text-align: center;
+}
+
+.sidebar-menu {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  font-family: "Playfair Display";
+}
+
+.btn-nav {
+  padding: 10px 15px;
+  margin: 5px 0;
+  text-decoration: none;
+  background-color: rgba(217,217,217, 0.48);
+  color: white;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+  font-family: "Playfair Display";
+}
+
+.btn-nav:hover {
+  background-color: #9e9c9c;
+}
+
+.logout {
+  background-color: rgba(244, 9, 9, 0.35);
+}
+
+.logout:hover {
+  background-color: rgba(255, 0, 0, 0.726);
+}
+
+/* === MAIN DASHBOARD === */
+
+.usuarios-dashboard {
+  display: flex;
+  gap: 40px;
+  padding: 30px;
+  color: rgb(68, 40, 8);
+  width: 1100px;
+  background-color: #fbe3dc;
+}
+
+.usuarios-lista,
+.usuarios-form {
+  flex: 1;
+  background-color: #fbe3dc;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.usuario-card {
+  background-color: #e8e8e8;
+  border-radius: 10px;
+  margin: 20px 20px 20px 20px;
+  padding: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.usuarios-lista h2
+{
+  margin-bottom: 30px;
+  color: #5e3c1f;
+  font-family: 'Stick No Bills', sans-serif;
+}
+
+.usuario-info {
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: 'Times New Roman', Times, serif;
+  color: #000000;
+}
+
+.usuario-acciones button {
+  display: block;
+  margin: 5px 0;
+  padding: 8px 12px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.btn-editar {
+  background-color: #5e3c1f;
+  color: white;
+}
+
+.btn-borrar {
+  background-color: #b00000;
+  color: white;
+}
+
+.usuarios-form h2 {
+  margin-bottom: 30px;
+  color: #5e3c1f;
+  font-family: 'Stick No Bills', sans-serif;
+}
+
+#form-crear-usuario {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#form-crear-usuario input,
+#form-crear-usuario select {
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  background-color: #ddd;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.guardar {
+  background-color: #2176ae;
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 20px;
+  cursor: pointer;
+}

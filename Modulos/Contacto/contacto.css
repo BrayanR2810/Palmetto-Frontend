@@ -1,0 +1,76 @@
+.contacto-section {
+  background-image: url(img/fondo.png);
+  padding: 3rem;
+  color: white;
+  position: relative;
+}
+
+.contacto-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: 'Playfair Display', serif;
+}
+
+.contacto-titulo {
+  text-align: center;
+  font-size: 26px;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.contacto-info p{
+  text-align: justify;
+}
+
+.contacto-datos p,
+.contacto-ubicacion p {
+  text-align: center;
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+.contacto-links ul {
+  list-style: none;
+  text-align: center;
+  font-size: 18px;
+  padding: 0;
+}
+
+.contacto-links li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 0.95rem;
+  transition: color 0.3s;
+}
+
+.contacto-links li a:hover {
+  color: #f1c40f;
+}
+
+.redes-sociales {
+  display: flex;
+  justify-content: center;
+  align-items: center;     
+  margin-top: 1rem;
+  gap: 10px;               
+}
+
+.redes-sociales img {
+  width: 30px;    
+  height: 30px;
+  object-fit: contain;
+  margin-right: 10px;
+  transition: transform 0.3s ease;
+}
+
+.redes-sociales img:hover {
+  transform: scale(1.1);
+}
+
+.contacto-ubicacion iframe {
+  width: 270px;
+  height: 200px;
+}

@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: 'Stick No Bills', sans-serif;
+}
+
+.dashboard-container {
+  display: flex;  
+  height: 100vh;
+}
+
+/* === SIDEBAR === */
+.sidebar {
+  background-color: #b2875d;
+  color: white;
+  width: 350px;
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sidebar-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.logo-sidebar {
+  width: 101px;
+  height: 94px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.sidebar-title {
+  font-size: 32px;
+  line-height: 1.1;
+  color: #ffffff;
+  text-align: center;
+}
+
+
+.sidebar-menu {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  font-family:"Playfair Display";
+}
+
+.btn-nav {
+  padding: 10px 15px;
+  margin: 5px 0;
+  text-decoration: none;
+  background-color: rgb(217,217,217, 48%);
+  color: white;
+  border-radius: 10px;
+  text-align:center;
+  font-size: 25px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+  font-family: "Playfair Display";
+}
+
+.btn-nav:hover {
+  background-color: #9e9c9c;
+}
+
+.logout {
+  background-color: rgb(244, 9, 9, 35%);
+}
+
+.logout:hover {
+  background-color: rgb(255, 0, 0, 0.726);
+}
+
+/* === MAIN DASHBOARD === */
+.main-dashboard {
+  flex: 1;
+  padding: 40px;
+  background-color: #fbe9dc;
+  font-size: 40px;
+  color:  rgb(68, 40, 8);
+}
+
+.welcome {
+  margin: 10px 0 30px;
+  font-size: 40px;
+  color:  rgb(68, 40, 8);
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);  
+  gap: 20px;
+  max-width: 690px;
+  padding-top: 45px;
+  margin: 0 auto;
+}
+
+.stat-card {
+  background-color: #f1d4b7;
+  padding: 20px 30px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.icon-section {
+  font-size: 60px;
+  align-items: center;
+  background-color: #b2875d;
+  border-radius: 50%;
+}
+
+.text-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.stat-number {
+  display: block;
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color:  rgb(68, 40, 8);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.text-section p {
+  margin: 0;
+  font-size: 20px;
+  color: rgb(68, 40, 8);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+}

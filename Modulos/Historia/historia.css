@@ -1,0 +1,130 @@
+.historia-section {
+  background-image: url(img/fondo.png);
+  background-size: cover;      
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 5rem;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+
+.titulo-historia {
+  font-family: 'Pacifico', cursive;
+  color: #00bfff;
+  font-size: 6rem;
+  padding-top: 0;
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+
+.historia-contenedor {
+  padding: 2rem; 
+  margin: 0 auto;   
+  background-color: rgba(249, 192, 106, 0.253);
+  border-radius: 15px;
+  max-width: 900px;
+  position: relative;
+  font-family: 'Playfair', serif;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.historia-texto {
+  font-family: 'Playfair', serif;
+  font-size: 24px;
+  line-height: 1.8;
+  color: #000000;
+  margin: 1rem 0;
+  text-align: center;
+}
+
+.comillas {
+  text-align: left;
+  margin-bottom: -6rem;  
+  font-size: 10rem;
+  color: #00bfff;
+  font-weight: bold;
+  display: block;
+  margin-top: -3rem; 
+}
+
+.comillas.cierre {
+  text-align: right;
+  margin-top: -4rem;
+  font-size: 10rem;
+  color: #00bfff;
+  font-weight: bold;
+  display: block;
+}
+
+
+.logo-palmetto img {
+  width: 150px;
+  height: auto;
+  position: absolute;
+  bottom: -60px;
+  transform: translateX(-50%);
+  padding: -2rem;
+  border-radius: 50%;
+}
+
+.reservas-section {
+  background-image: url('img/fondo-reservas.png');
+  background-size: cover;
+  background-position: center;
+  padding: 4rem 2rem;
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.reservas-contenido {
+  max-width: 900px;
+  margin: 0 auto;
+  z-index: 2;
+  position: relative;
+}
+
+.titulo-reservas {
+  font-family: 'Stick No Bills', sans-serif;
+  font-size: 54px;  
+  margin-bottom: 1rem;
+}
+
+.texto-reservas {
+  font-family: 'Playfair', serif;
+  font-size: 32px;
+  margin-bottom: 6rem;
+}
+
+.formulario-reservas {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.formulario-reservas input {
+  padding: 0.8rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px 0 0 5px;
+  width: 250px;
+  max-width: 90%;
+}
+
+.formulario-reservas button {
+  background-color: #00bfff;
+  color: rgb(0, 0, 0);
+  font-family: 'Playfair', serif;
+  font-weight: bold;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.formulario-reservas button:hover {
+  background-color: #009fd4;
+}

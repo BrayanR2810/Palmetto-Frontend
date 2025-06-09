@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Stick+No+Bills:wght@600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap');
+
+/* Estilo base */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  color: white;
+  background-color: #000;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ======= NAVBAR ======= */
+.navbar {
+  position: absolute;
+  top: 0;
+  width: 95%;
+  z-index: 100;
+  padding: 25px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Playfair Display";
+  font-size: 26px;
+}
+
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 80px;
+  margin: 0;
+  padding: 10px;
+}
+
+.nav-links li a {
+  color: white;
+}
+
+.nav-links li a:hover {
+  color: #1e90ff;
+}
+
+.btn-login {
+  background-color: #1e90ff;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 20px;
+  font-size: 15px;
+  float: right;
+  font-family:"Playfair Display";
+  font-size: 14px;
+}
+
+.btn-login:hover {
+  background-color: #0b66c2;
+}
+
+/* ======= HERO SECTION (Inicio) ======= */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10rem 5rem 5rem;
+  background: url('img/fondo.jpg') no-repeat center center/cover;
+  position: relative;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 0;
+}
+
+.hero-content, .hero-logo {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-content h2 {
+  font-size: 2rem;
+  margin: 0;
+  font-weight: normal;
+  font-family:"Playfair Display";
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 2rem;  
+}
+
+.hero-content h1 {
+  font-family: 'Stick No Bills', sans-serif;
+  font-size: 96px;
+  font-weight: 300;
+  margin: 1rem 0;
+  line-height: 1.2;
+  letter-spacing: 2px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.hero-content p {
+  max-width: 600px;
+  font-family:"Playfair Display";
+  font-size: 36px;  
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.hero-logo img {
+  max-width: 400px;
+  width: 400px;
+  border-radius:50%;
+  display: block;
+  margin: 0 auto;
+}
+
+@media (max-width: 900px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 12rem 2rem 4rem;
+  }
+
+  .hero-logo {
+    margin-top: 2rem;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+}

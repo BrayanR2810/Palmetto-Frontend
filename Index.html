@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PALMETTO COCINA & CAFÉ</title>
+
+  <!-- Fuentes -->
+  <link href="https://fonts.googleapis.com/css2?family=Stick+No+Bills:wght@600;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+
+  <!-- Estilos por módulo -->
+  <link rel="stylesheet" href="Modulos/Inicio/inicio.css">
+  <link rel="stylesheet" href="Modulos/Promociones/promociones.css">
+  <link rel="stylesheet" href="Modulos/Menu/menu.css">
+  <link rel="stylesheet" href="Modulos/Historia/historia.css">
+  <link rel="stylesheet" href="Modulos/Contacto/contacto.css">
+</head>
+<body>
+
+  <!-- ===== MÓDULO INICIO ===== -->
+  <header class="navbar">
+    <nav class="navbar">
+    <ul class="nav-links">
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#promociones">Promociones</a></li>
+      <li><a href="#historia">Historia</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+    <button class="btn-login">Iniciar Sesión</button>
+</nav>
+
+  </header>
+
+  <section id="inicio" class="hero">
+    <div class="hero-content">
+      <h2>Bienvenidos a</h2>
+      <h1>PALMETTO <br> COCINA & CAFÉ</h1>
+      <p>Encantador gastrobar ubicado en la Calle 12A #8-43, Local 7 Bogotá</p>
+    </div>
+    <div class="hero-logo">
+      <img src="Modulos/Inicio/img/Logo.png" alt="Logo Palmetto Cocina & Café" />
+    </div>
+  </section>
+
+  <!-- ===== MÓDULO PROMOCIONES ===== -->
+
+<section class="promociones" id="promociones">
+  <div class="carousel-container" id="carousel-promos-publico">
+    <button class="carousel-btn prev">&#10094;</button>
+    <div class="carousel-slides"></div>
+    <button class="carousel-btn next">&#10095;</button>
+  </div>
+  <div class="dots" id="promo-dots-publico"></div>
+</section>
+
+<!-- ===== MÓDULO MENÚ ===== -->
+<section id="menu">
+  <h2 class="menu-title">MENÚ</h2>
+  <p class="bienvenida">Bienvenidos a nuestro menú principal – PALMETTO COCINA & CAFÉ</p>
+
+  <!-- Categoría: DESAYUNOS -->
+  <div class="categoria">
+    <h3>DESAYUNOS</h3>
+    <div class="carousel-container">
+      <button class="prev">&#10094;</button>
+      <div class="carousel-track" data-categoria="desayunos"></div>
+      <button class="next">&#10095;</button>
+    </div>
+  </div>
+
+  <!-- Categoría: PLATOS FUERTES -->
+  <div class="categoria">
+    <h3>PLATOS FUERTES</h3>
+    <div class="carousel-container">
+      <button class="prev">&#10094;</button>
+      <div class="carousel-track" data-categoria="platos fuertes"></div>
+      <button class="next">&#10095;</button>
+    </div>
+  </div>
+
+  <!-- Categoría: BEBIDAS -->
+  <div class="categoria">
+    <h3>BEBIDAS</h3>
+    <div class="carousel-container">
+      <button class="prev">&#10094;</button>
+      <div class="carousel-track" data-categoria="bebidas"></div>
+      <button class="next">&#10095;</button>
+    </div>
+  </div>
+</section>
+
+
+<section class="menu-completo">
+  <div class="contenido">
+    <div class="texto">
+      <h2>Ten la oportunidad de tener un <br> momento increíble en <br> 
+        <span>PALMETTO COCINA & CAFÉ</span>
+      </h2>
+      <p>Menú Completo →→→
+      </p>
+    </div>
+    <div class="qr">
+      <img src="Modulos/Menu/img/qr-menu.png" alt="Código QR Menú Completo">
+    </div>
+  </div>
+</section>
+
+  <!-- ===== MÓDULO HISTORIA ===== -->
+
+  <section id="historia" class="historia-section">
+  <h2 class="titulo-historia">Historia</h2>
+  <div class="historia-contenedor">
+    <span class="comillas">❝</span>
+    <p class="historia-texto">
+      <strong>PALMETTO COCINA Y CAFÉ</strong> es un encantador gastrobar ubicado en la Calle 12A #8-43, Local 7 Bogotá, abrió sus puertas el 1 de octubre de 2022, está estructurado en cuatro áreas principales: cocina, recepción/caja, comedor y barra. Este espacio combina lo mejor de la gastronomía y el ambiente acogedor de un café, ofreciendo una experiencia única para sus visitantes. Con un enfoque en sabores cuidadosamente elaborados y una atención al detalle, <strong>PALMETTO COCINA Y CAFÉ</strong> se ha convertido en un lugar ideal para disfrutar de momentos inolvidables en un entorno moderno y tranquilo.
+    </p>
+    <span class="comillas cierre">❞</span>
+
+    <div class="logo-palmetto">
+      <img src="Modulos/Historia/img/Logo.png" alt="Logo Palmetto">
+    </div>
+  </div>
+</section>
+
+<section id="reservas" class="reservas-section">
+  <div class="reservas-contenido">
+    <h2 class="titulo-reservas">Reservas</h2>
+    <p class="texto-reservas">Déjanos tu número de contacto y te enviaremos la información</p>
+
+    <form class="formulario-reservas">
+      <input type="tel" placeholder="Número de contacto" required>
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+</section>
+
+<!-- ===== MÓDULO CONTACTO===== -->  
+
+<section id="contacto" class="contacto-section">
+  <div class="contacto-container">
+    
+    <div class="contacto-info">
+      <h2 class="contacto-titulo">Información</h2>
+      <p><strong>PALMETTO COCINA Y CAFÉ</strong> es un encantador gastrobar ubicado en la Calle 12A #8-43, Local 7 Bogotá, abrió sus puertas el 1 de octubre de 2022</p>
+      <div class="redes-sociales">
+        <a href="#"><img src="Modulos/Contacto/img/whatsapp-icono.png" alt="WhatsApp"></a>
+        <a href="#"><img src="Modulos/Contacto/img/instagram-icono.png" alt="Instagram"></a>
+        <a href="#"><img src="Modulos/Contacto/img/tiktok-icono.png" alt="TikTok"></a>
+      </div>
+    </div>
+
+    <div class="contacto-links">
+      <h2 class="contacto-titulo">Acerca de</h2>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li><br>
+        <li><a href="#menu">Menú</a></li><br>
+        <li><a href="#promociones">Promociones</a></li><br>
+        <li><a href="#historia">Historia</a></li><br>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </div>
+
+    <div class="contacto-datos">
+      <h2 class="contacto-titulo">Contacto</h2>
+      <p>+57 300 6376072</p>
+      <p>palmettococinacafe@gmail.com</p>
+      <p><a href="https://www.palmettococina&cafe.com">www.palmettococina&cafe.com</a></p>
+    </div>
+
+    <div class="contacto-ubicacion">
+      <h2 class="contacto-titulo">Ubicación</h2>
+      <p>Calle 12A #8-43, Local 7 Bogotá</p>
+      <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.9655731549155!2d-74.07836262636066!3d4.600189342523491!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f99d6cbef4081%3A0x9c99a41407db247e!2sPalmetto%20Cocina%20y%20Caf%C3%A9!5e0!3m2!1ses-419!2sco!4v1747768532193!5m2!1ses-419!2sco" 
+      allowfullscreen="" 
+      loading="lazy" 
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+    </div>
+  </div>
+</section>
+</body>
+  <!-- Script JS -->
+  <script src="main.js"></script>
+</html>
+
+

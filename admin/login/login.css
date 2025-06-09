@@ -1,0 +1,81 @@
+body {
+  font-family: 'Stick No Bills', sans-serif;
+  background: url('img/fondo.jpg') no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
+  overflow: hidden;
+}
+
+.container-admin {
+  display: flex;
+  width: 100%;
+  height: calc(100vh - 100px);
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.left-panel, .right-panel {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.titulo-admin-global {
+  width: 100%;
+  text-align: center;
+  font-size: 96px;
+  color: white;
+  padding: 10px 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  margin: 0;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  width: 300%;
+  max-width: 500px;
+}
+
+.login-form label {
+  color: white;
+  font-size: 24px;
+  margin-bottom: 5px;
+  font-family:"Playfair Display";
+}
+
+.login-form input {
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  outline: none;
+  margin-bottom: 40px;
+  font-size: 24px;
+  width: 100%;
+  background-color: rgba(217, 217, 217, 66%);
+}
+
+.login-form button {
+  padding: 10px;
+  background-color: #2176ae;
+  width: 60%;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  margin: 0 auto;
+}
+
+.login-form button:hover {
+  background-color: #1a5c8a;
+}
+
+.right-panel .logo {
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  object-fit: cover;
+}

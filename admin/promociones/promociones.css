@@ -1,0 +1,222 @@
+/* ===== RESET GENERAL ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  margin: auto;
+  font-family: 'Stick No Bills', sans-serif;
+}
+
+.dashboard-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* === SIDEBAR === */
+.sidebar {
+  background-color: #b2875d;
+  color: white;
+  width: 350px;
+  height: auto;
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.sidebar-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.logo-sidebar {
+  width: 101px;
+  height: 94px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.sidebar-title {
+  font-size: 32px;
+  line-height: 1.1;
+  color: #ffffff;
+  text-align: center;
+}
+
+.sidebar-menu {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  font-family: "Playfair Display";
+}
+
+.btn-nav {
+  padding: 10px 15px;
+  margin: 5px 0;
+  text-decoration: none;
+  background-color: rgba(217,217,217, 0.48);
+  color: white;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+  font-family: "Playfair Display";
+}
+
+.btn-nav:hover {
+  background-color: #9e9c9c;
+}
+
+.logout {
+  background-color: rgba(244, 9, 9, 0.35);
+}
+
+.logout:hover {
+  background-color: rgba(255, 0, 0, 0.726);
+}
+
+/* === MAIN DASHBOARD === */
+.main-dashboard {
+  padding: 30px;
+  color: rgb(68, 40, 8);
+  width: 1100px;
+  background-color: #fbe9dc;
+}
+
+h3 {
+  font-size: 30px;
+  margin-bottom: 5px;
+}
+
+.welcome {
+  margin: 10px 0 30px;
+  font-size: 30px;
+  text-align: center;
+}
+
+/* === PROMOCIONES === */
+.promociones {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding: 20px 0 0 0;
+}
+
+.carousel-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel-slide {
+  display: none;
+  position: relative;
+  text-align: center;
+}
+
+.carousel-slide.active {
+  display: block;
+}
+
+.carousel-slide img {
+  width: 100%;
+  height: auto;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+  background-color: rgba(0, 0, 0, 0.94);
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 60%;
+  z-index: 2;
+}
+
+.carousel-btn:hover {
+  background-color: #333;
+}
+
+.carousel-btn.prev {
+  left: 10px;
+}
+
+.carousel-btn.next {
+  right: 10px;
+}
+
+.dots {
+  text-align: center;
+  margin-top: 0;
+}
+
+.dot {
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  margin: 5px;
+  background-color: #1e90ff;
+  border-radius: 50%;
+}
+
+.dot.active {
+  background-color: #81baf3;
+}
+
+/* NUEVO: Contenedor de acciones sobre el slide */
+.slide-acciones {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  z-index: 3;
+}
+
+/* NUEVO: Botones Editar y Eliminar */
+.btn-editar,
+.btn-eliminar {
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn-editar {
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #333;
+}
+
+.btn-eliminar {
+  background-color: rgba(255, 0, 0, 0.9);
+  color: white;
+}
+
+.btn-agregar {
+  margin-top: 20px;
+  margin-left: 42%;
+  background-color: #2176ae;
+  color: white;
+  padding: 12px 30px;
+  font-size: 16px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}

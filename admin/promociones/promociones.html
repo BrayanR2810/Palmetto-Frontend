@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Promociones - Palmetto</title>
+  <link rel="stylesheet" href="promociones.css">
+  <link href="https://fonts.googleapis.com/css2?family=Stick+No+Bills:wght@800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="dashboard-container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <img src="img/Logo.png" alt="Logo" class="logo-sidebar">
+        <h2 class="sidebar-title">PALMETTO<br>COCINA & CAFÉ</h2>
+      </div>
+      <nav class="sidebar-menu">
+        <a href="../Dashboard/dashboard.html" class="btn-nav">🏠 Inicio</a>
+        <a href="../Platos/platos.html" class="btn-nav">🍽️ Platos Menú</a>
+        <a href="../Promociones/promociones.html" class="btn-nav">🎉 Promociones</a>
+        <a href="../Usuarios/usuarios.html" class="btn-nav">👥 Usuarios</a>
+        <a href="../login/login.html" class="btn-nav logout">❌ Cerrar sesión</a>
+      </nav>
+    </aside>
+
+    <!-- Dashboard Promociones -->
+    <main class="main-dashboard">
+      <h2 class="titulo-pagina">Promociones</h2>
+
+      <!-- Carrusel dinámico de promociones -->
+      <section class="promociones">
+        <div class="carousel-container">
+          <button class="carousel-btn prev">&#10094;</button>
+          <div id="carousel-promos" class="carousel-slides"></div>
+          <button class="carousel-btn next">&#10095;</button>
+        </div>
+        <div class="dots"></div>
+
+
+      <!-- Formulario para agregar -->
+      <input type="file" id="promoFile" accept="image/*" />
+      <button id="btnAgregarPromo" class="btn-agregar">Agregar Imagen</button>
+    </main>
+  </div>
+
+  <script src="promociones.js"></script>
+</body>
+</html>
