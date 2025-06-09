@@ -1,37 +1,39 @@
-const formLogin = document.getElementById("form-login");
+const API_LOGIN = "https://palmetto-cocina-y-cafe.onrender.com/api/usuarios/login";
 
-formLogin.addEventListener("submit", async (e) => {
-  e.preventDefault();
+document.addEventListener("DOMContentLoaded", () => {
+  const formLogin = document.getElementById("form-login");
 
-  const correo = formLogin.correo.value.trim().toLowerCase();
-  const contraseña = formLogin.contraseña.value;
+  if (formLogin) {
+    formLogin.addEventListener("submit", async (e) => {
+      e.preventDefault();
 
-  if (!correo || !contraseña) {
-    alert("Por favor, completa todos los campos.");
-    return;
-  }
+      const correo = document.getElementById("correo").value;
+      const contraseña = document.getElementById("contraseña").value;
 
-  try {
-    const res = await fetch("https://palmetto-cocina-y-cafe.onrender.com/api/usuarios/login", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ correo, contraseña })
+      try {
+        const res = await fetch(API_LOGIN, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify({ correo, contraseña })
+        });
+
+        if (!res.ok) {
+          const error = await res.json();
+          alert(error.mensaje || "Error al iniciar sesión.");
+          return;
+        }
+
+        const data = await res.json();
+        localStorage.setItem("token", data.token);
+        // Redirigir al dashboard
+        window.location.href = "../dashboard/dashboard.html";
+      } catch (err) {
+        alert("Error de conexión con el servidor.");
+        console.error(err);
+      }
     });
-
-    const data = await res.json();
-
-    if (res.ok) {
-      // Guardar token y datos de usuario
-      localStorage.setItem("token", data.token);
-      localStorage.setItem("usuario", JSON.stringify(data.usuario));
-
-      alert("Bienvenido, " + data.usuario.nombre);
-      window.location.href = "../Dashboard/dashboard.html";
-    } else {
-      alert(data.mensaje || "Correo o contraseña incorrectos");
-    }
-  } catch (error) {
-    console.error("Error al iniciar sesión:", error);
-    alert("Error de conexión con el servidor.");
   }
 });
+
