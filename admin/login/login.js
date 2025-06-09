@@ -33,6 +33,9 @@ document.addEventListener("DOMContentLoaded", () => {
         alert("Error de conexión con el servidor.");
         console.error(err);
       }
+        app.get("/", (req, res) => {
+          res.send("API de Palmetto funcionando correctamente.");
+        });
     });
   }
 });
