@@ -8,7 +8,7 @@ if (btnLogin) {
 
 // ===== MÓDULO MENÚ PÚBLICO =====
 async function cargarMenuPublico() {
-  const API_URL = "http://localhost:4000/api/platos";
+  const API_URL = "https://palmetto-cocina-y-cafe.onrender.com/api/platos";
 
   try {
     const res = await fetch(API_URL);
@@ -73,7 +73,7 @@ async function cargarPromocionesPublicas() {
   if (!container || !dotsContainer || !slidesContainer) return;
 
   try {
-    const res = await fetch('http://localhost:4000/api/promociones');
+    const res = await fetch('https://palmetto-cocina-y-cafe.onrender.com/api/promociones');
     const promociones = await res.json();
 
     slidesContainer.innerHTML = '';
